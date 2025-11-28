@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deema Boutique - Designer & Tailoring</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&family=Poppins:wght@400;700&family=Marhey:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="welcomeModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>مرحباً بك في ديما بوتيك!</h2>
+            <p>ديما بوتيك | أزياء تعكس روحك... كلاسيك مودرن وأناقة مختلفة ... !</p>
+            <button id="modal-close-btn">الدخول للموقع</button>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">Deema Boutique</div>
+            <ul class="nav-links">
+                <li><a href="#profile">الرئيسية</a></li>
+                <li><a href="#products">المنتجات</a></li> 
+                <li><a href="#payment">طرق الدفع</a></li>
+                <li><a href="#contact">تواصل</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile" class="hero">
+            <img src="images/profile_deema.png" alt="Deema Hussein Profile Picture" class="profile-pic"> 
+            
+            <div class="profile-header">
+                <p class="name-sub marhey-font">Deema Boutiquè</p>
+                <p class="role-sub">مصممة أزياء وخياطة</p>
+            </div>
+
+            <h1>ديما بوتيك: تصاميم عصرية بتفاصيل فاخرة</h1>
+            <p class="bio">
+                كُل قطعة تشرح قصة.. تشرح جمالچ.
+                <br>
+                هدفنا الأول هو توفير قطع تكون
+                <br>
+                **high quality, special design**
+                <br>
+                بكميات قليلة وبدون تكرار ابداً.
+                <br>
+                القطعة أنت تأخذيها ماراح تشوفيها على غيرج.
+                <br>
+                تشرح جمالچ..
+            </p>
+            <a href="#products" class="btn-primary">شاهد المنتجات المميزة</a>
+        </section>
+
+        <section id="products">
+            <h2>أحدث التصاميم والمجموعات</h2>
+            <p class="section-subtitle">إليك مجموعة من أحدث التصاميم المميزة لدينا:</p>
+            <div class="products-grid">
+                
+                <article class="product-card featured-product">
+                    <img src="images/profile1.jpg" alt="Gray Formal Suit">
+                    <h3>الطقم الرسمي الرمادي</h3>
+                    <p class="product-info">طقم رسمي نسائي باللون الرمادي الفاتح. اضغط على الزر لمشاهدة جميع الصور والتفاصيل والسعر.</p>
+                    
+                    <button class="btn-primary btn-details" data-product-id="gray-suit">تفاصيل وسعر المنتج</button>
+                    <a href="#payment" class="btn-payment">طرق الدفع</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="images/fur_jacket_1.jpg" alt="Burgundy Fur Jacket"> 
+                    <h3>جاكيت فرو (اللون البرغندي)</h3>
+                    <p class="product-info">جاكيت فرو دافئ ومُبطن بالكامل. تصميم أنيق ومريح، متوفر باللون البرغندي.</p>
+                    
+                    <button class="btn-primary btn-details" data-product-id="fur-jacket">تفاصيل وسعر المنتج</button>
+                    <a href="#payment" class="btn-payment">طرق الدفع</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="images/skirt_suit_1.jpg" alt="Casual Skirt Suit">
+                    <h3>سوت تنورة كاجوال</h3>
+                    <p class="product-info">طقم سويتر وتنورة بتفصيل عصري ومميز، متوفر باللون الماروني والنيلي. خامة Soft Suede.</p>
+                    
+                    <button class="btn-primary btn-details" data-product-id="skirt-suit">تفاصيل وسعر المنتج</button>
+                    <a href="#payment" class="btn-payment">طرق الدفع</a>
+                </article>
+
+                <article class="product-card">
+                    <img src="images/black_suit_1.jpg" alt="Black Suit">
+                    <h3>طقم سوت أسود كلاسيكي</h3>
+                    <p class="product-info">سوت أسود رسمي بستايل كلاسيكي حديث. بليزر مبطنة وجاكة جانبية في البنطرون.</p>
+                    
+                    <button class="btn-primary btn-details" data-product-id="black-suit">تفاصيل وسعر المنتج</button>
+                    <a href="#payment" class="btn-payment">طرق الدفع</a>
+                </article>
+                
+                <article class="product-card">
+                    <img src="images/zara_suit_1.jpg" alt="Zara Suit">
+                    <h3>سوت زارا</h3>
+                    <p class="product-info">طقم سويتر وبنطلون بستايل "زارا". تفصيل مميز وتطريز على الأكمام. متوفر بهذا اللون فقط.</p>
+                    
+                    <button class="btn-primary btn-details" data-product-id="zara-suit">تفاصيل وسعر المنتج</button>
+                    <a href="#payment" class="btn-payment">طرق الدفع</a>
+                </article>
+                
+                </div>
+        </section>
+
+        <section id="payment" class="alt-bg">
+            <h2>معلومات الطلب والدفع</h2>
+            <p>لإتمام الطلب، يرجى التواصل معنا أولاً عبر الواتساب أو انستغرام لتأكيد التفاصيل. يمكن الدفع عبر الطرق التالية:</p>
+            
+            <div class="payment-grid">
+                
+                <div class="payment-card">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>واتساب العمل</h3>
+                    <p>لطلب سريع و الاستفسارات:</p>
+                    <p class="contact-detail">+964 775 600 0447</p>
+                    <a href="https://wa.me/9647756000447" target="_blank" class="btn-payment-small">إرسال رسالة</a>
+                </div>
+
+                <div class="payment-card">
+                    <i class="fas fa-credit-card"></i>
+                    <h3>الدفع ببطاقة كي كارد</h3>
+                    <p>يمكن الدفع مباشرةً عبر بطاقة كي كارد:</p>
+                    <p class="contact-detail">7147028117</p>
+                </div>
+
+                <div class="payment-card">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <h3>الدفع عند الاستلام</h3>
+                    <p>الدفع نقداً عند استلام المنتج (حسب مناطق التوصيل).</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact">
+            <h2>تواصل معنا</h2>
+            <p>نرحب بطلبات التفصيل الخاصة والتعاونات الجديدة. جاهزون للرد على استفساراتكم!</p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> <strong>البريد الإلكتروني:</strong> <a href="mailto:deemahussein18@gmail.com">deemahussein18@gmail.com</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> <strong>الموقع:</strong> السماوة، المثنى، العراق</p>
+                <p class="instagram-link"><i class="fab fa-instagram"></i> <strong>انستغرام:</strong> <a href="https://www.instagram.com/deemaboutiquee?igsh=cmNxcTMzY3JldG96&utm_source=qr" target="_blank">@deemaboutiquee</a></p>
+                <p class="tiktok-link"><i class="fab fa-tiktok"></i> <strong>تيك توك:</strong> <a href="https://www.tiktok.com/@deemaaboutiquee?_t=ZS-90cTEfpuSor&_r=1" target="_blank">@deemaaboutiquee</a></p>
+            </div>
+        </section>
+    </main>
+
+    <div id="gray-suit-modal" class="product-details-modal modal" data-product-id="gray-suit">
+        <div class="modal-content">
+            <span class="close-btn details-close-btn">&times;</span>
+            
+            <div class="details-layout">
+                <div class="image-gallery">
+                    <img src="images/profile1.jpg" alt="Gray Suit Image 1" class="gallery-image active">
+                    <img src="images/gray_suit_2.jpg" alt="Gray Suit Image 2" class="gallery-image">
+                    <img src="images/gray_suit_3.jpg" alt="Gray Suit Image 3" class="gallery-image">
+                    <img src="images/gray_suit_4.jpg" alt="Gray Suit Image 4" class="gallery-image">
+                    <img src="images/gray_suit_5.jpg" alt="Gray Suit Image 5" class="gallery-image">
+                    
+                    <div class="gallery-nav">
+                        <span class="dot active" data-image-index="0"></span>
+                        <span class="dot" data-image-index="1"></span>
+                        <span class="dot" data-image-index="2"></span>
+                        <span class="dot" data-image-index="3"></span>
+                        <span class="dot" data-image-index="4"></span>
+                    </div>
+                </div>
+
+                <div class="product-specs">
+                    <h2>الطقم الرسمي الرمادي (أحدث التصاميم)</h2>
+                    <p class="product-material">المتيريال: **قطن مع كريب ثقيل**</p>
+
+                    <div class="price-box">
+                        <span class="price-label">السعر:</span>
+                        <span class="product-price">110,000 د.ع.</span>
+                    </div>
+
+                    <div class="specs-list">
+                        <h3>تفاصيل المنتج:</h3>
+                        <ul>
+                            <li>الجاكيت مُبطن بالكامل</li>
+                            <li>طول الجاكيت من الأمام: 65cm</li>
+                            <li>طول الجاكيت من الخلف: 60cm</li>
+                            <li>طول البنطرون: 105cm</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="https://www.instagram.com/reel/DRIAGcNDRMQ/?igsh=MWF2dXU4OXQ5eWNiNw==" target="_blank" class="btn-reel btn-large"><i class="fab fa-instagram"></i> شاهد الريلز والقياسات على انستغرام</a>
+                    
+                    <a href="https://wa.me/9647756000447" target="_blank" class="btn-whatsapp btn-large">اطلب الآن عبر الواتساب <i class="fab fa-whatsapp"></i></a>
+                    <button class="btn-kicard btn-large" onclick="alert('للدفع عبر كي كارد (برنامج Super Qi)، يرجى استخدام الرقم 7147028117 بعد التواصل معنا لتأكيد الطلب.')">الدفع عبر كي كارد (Super Qi) <i class="fas fa-credit-card"></i></button>
+                    <a href="https://www.instagram.com/deemaboutiquee" target="_blank" class="btn-order btn-large">اطلب الآن عبر انستغرام <i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="fur-jacket-modal" class="product-details-modal modal" data-product-id="fur-jacket">
+        <div class="modal-content">
+            <span class="close-btn details-close-btn">&times;</span>
+            <div class="details-layout">
+                <div class="image-gallery">
+                    <img src="images/fur_jacket_1.jpg" alt="Fur Jacket Image 1" class="gallery-image active">
+                    <img src="images/fur_jacket_2.jpg" alt="Fur Jacket Image 2" class="gallery-image">
+                    <img src="images/fur_jacket_3.jpg" alt="Fur Jacket Image 3" class="gallery-image">
+                    
+                    <div class="gallery-nav">
+                        <span class="dot active" data-image-index="0"></span>
+                        <span class="dot" data-image-index="1"></span>
+                        <span class="dot" data-image-index="2"></span>
+                    </div>
+                </div>
+
+                <div class="product-specs">
+                    <h2>جاكيت فرو (اللون البرغندي)</h2>
+                    <p class="product-material">المتيريال: **فرو مُبطن بالكامل**</p>
+
+                    <div class="price-box">
+                        <span class="price-label">السعر:</span>
+                        <span class="product-price">65,000 د.ع.</span> 
+                    </div>
+
+                    <div class="specs-list">
+                        <h3>تفاصيل المنتج:</h3>
+                        <ul>
+                            <li>مُبطن بالكامل</li>
+                            <li>طوله: 65cm</li>
+                            <li>المقاس: فري سايز (Free Size)</li>
+                            <li>اللون المتوفر: البرغندي فقط</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="https://www.instagram.com/reel/DRfBh-GjWqh/?igsh=eGttYThxdW5oaXpy" target="_blank" class="btn-reel btn-large"><i class="fab fa-instagram"></i> شاهد الريلز والقياسات على انستغرام</a>
+
+                    <a href="https://wa.me/9647756000447" target="_blank" class="btn-whatsapp btn-large">اطلب الآن عبر الواتساب <i class="fab fa-whatsapp"></i></a>
+                    <button class="btn-kicard btn-large" onclick="alert('للدفع عبر كي كارد (برنامج Super Qi)، يرجى استخدام الرقم 7147028117 بعد التواصل معنا لتأكيد الطلب.')">الدفع عبر كي كارد (Super Qi) <i class="fas fa-credit-card"></i></button>
+                    <a href="https://www.instagram.com/deemaboutiquee" target="_blank" class="btn-order btn-large">اطلب الآن عبر انستغرام <i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="skirt-suit-modal" class="product-details-modal modal" data-product-id="skirt-suit">
+        <div class="modal-content">
+            <span class="close-btn details-close-btn">&times;</span>
+            <div class="details-layout">
+                <div class="image-gallery">
+                    <img src="images/skirt_suit_1.jpg" alt="Skirt Suit Image 1" class="gallery-image active">
+                    <img src="images/skirt_suit_2.jpg" alt="Skirt Suit Image 2" class="gallery-image">
+                    <img src="images/skirt_suit_3.jpg" alt="Skirt Suit Image 3" class="gallery-image">
+                    <img src="images/skirt_suit_4.jpg" alt="Skirt Suit Image 4" class="gallery-image">
+                    
+                    <div class="gallery-nav">
+                        <span class="dot active" data-image-index="0"></span>
+                        <span class="dot" data-image-index="1"></span>
+                        <span class="dot" data-image-index="2"></span>
+                        <span class="dot" data-image-index="3"></span>
+                    </div>
+                </div>
+
+                <div class="product-specs">
+                    <h2>سوت تنورة كاجوال</h2>
+                    <p class="product-material">المتيريال: **Soft Suede**</p>
+
+                    <div class="price-box">
+                        <span class="price-label">السعر:</span>
+                        <span class="product-price">65,000 د.ع.</span> 
+                    </div>
+
+                    <div class="specs-list">
+                        <h3>تفاصيل المنتج:</h3>
+                        <ul>
+                            <li>طول التنورة: 100cm</li>
+                            <li>طول السويتر: 65cm</li>
+                            <li>متوفر باللون: الماروني و النيلي</li>
+                            <li>القياسات المتوفرة: S, M, L</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="https://www.instagram.com/reel/DQuRQQCDX-Q/?igsh=MXA4MjJqODJyYWpmdA==" target="_blank" class="btn-reel btn-large"><i class="fab fa-instagram"></i> شاهد الريلز والقياسات على انستغرام</a>
+                    
+                    <a href="https://wa.me/9647756000447" target="_blank" class="btn-whatsapp btn-large">اطلب الآن عبر الواتساب <i class="fab fa-whatsapp"></i></a>
+                    <button class="btn-kicard btn-large" onclick="alert('للدفع عبر كي كارد (برنامج Super Qi)، يرجى استخدام الرقم 7147028117 بعد التواصل معنا لتأكيد الطلب.')">الدفع عبر كي كارد (Super Qi) <i class="fas fa-credit-card"></i></button>
+                    <a href="https://www.instagram.com/deemaboutiquee" target="_blank" class="btn-order btn-large">اطلب الآن عبر انستغرام <i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="black-suit-modal" class="product-details-modal modal" data-product-id="black-suit">
+        <div class="modal-content">
+            <span class="close-btn details-close-btn">&times;</span>
+            <div class="details-layout">
+                <div class="image-gallery">
+                    <img src="images/black_suit_1.jpg" alt="Black Suit Image 1" class="gallery-image active">
+                    <img src="images/black_suit_2.jpg" alt="Black Suit Image 2" class="gallery-image">
+                    <img src="images/black_suit_3.jpg" alt="Black Suit Image 3" class="gallery-image">
+                    
+                    <div class="gallery-nav">
+                        <span class="dot active" data-image-index="0"></span>
+                        <span class="dot" data-image-index="1"></span>
+                        <span class="dot" data-image-index="2"></span>
+                    </div>
+                </div>
+
+                <div class="product-specs">
+                    <h2>طقم سوت أسود كلاسيكي</h2>
+                    <p class="product-material">المتيريال: **كريب ثقيل مع بطانة**</p> <div class="price-box">
+                        <span class="price-label">السعر:</span>
+                        <span class="product-price">110,000 د.ع.</span> 
+                    </div>
+
+                    <div class="specs-list">
+                        <h3>تفاصيل المنتج:</h3>
+                        <ul>
+                            <li>طول البليزر: 75cm</li>
+                            <li>البليزر مُبطنة من الأمام فقط</li>
+                            <li>طول البنطرون: 110cm</li>
+                            <li>البنطرون مع چاكة جانبية يمكن غلقها</li>
+                            <li>القياسات المتوفرة: 38, 40, 42, 44</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="https://www.instagram.com/reel/DQZpyuRDf8u/?igsh=MXhlMnF6aWlzZHVuZQ==" target="_blank" class="btn-reel btn-large"><i class="fab fa-instagram"></i> شاهد الريلز والقياسات على انستغرام</a>
+                    
+                    <a href="https://wa.me/9647756000447" target="_blank" class="btn-whatsapp btn-large">اطلب الآن عبر الواتساب <i class="fab fa-whatsapp"></i></a>
+                    <button class="btn-kicard btn-large" onclick="alert('للدفع عبر كي كارد (برنامج Super Qi)، يرجى استخدام الرقم 7147028117 بعد التواصل معنا لتأكيد الطلب.')">الدفع عبر كي كارد (Super Qi) <i class="fas fa-credit-card"></i></button>
+                    <a href="https://www.instagram.com/deemaboutiquee" target="_blank" class="btn-order btn-large">اطلب الآن عبر انستغرام <i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="zara-suit-modal" class="product-details-modal modal" data-product-id="zara-suit">
+        <div class="modal-content">
+            <span class="close-btn details-close-btn">&times;</span>
+            <div class="details-layout">
+                <div class="image-gallery">
+                    <img src="images/zara_suit_1.jpg" alt="Zara Suit Image 1" class="gallery-image active">
+                    <img src="images/zara_suit_2.jpg" alt="Zara Suit Image 2" class="gallery-image">
+                    <img src="images/zara_suit_3.jpg" alt="Zara Suit Image 3" class="gallery-image">
+                    
+                    <div class="gallery-nav">
+                        <span class="dot active" data-image-index="0"></span>
+                        <span class="dot" data-image-index="1"></span>
+                        <span class="dot" data-image-index="2"></span>
+                    </div>
+                </div>
+
+                <div class="product-specs">
+                    <h2>سوت زارا</h2>
+                    <p class="product-material">المتيريال: **غير محدد (تم استخدام اسم المنتج)**</p>
+
+                    <div class="price-box">
+                        <span class="price-label">السعر:</span>
+                        <span class="product-price">55,000 د.ع.</span> 
+                    </div>
+
+                    <div class="specs-list">
+                        <h3>تفاصيل المنتج:</h3>
+                        <ul>
+                            <li>اللون المتوفر: هذا اللون فقط (بيج/أوف وايت)</li>
+                            <li>القصة: السويتر قصير من الأمام ويغطي الورك من الخلف</li>
+                            <li>البنطرون: وايد ليگ (Wide Leg)</li>
+                            <li>طول البنطرون: 105cm</li>
+                            <li>القياسات المتوفرة: S, M, L</li>
+                        </ul>
+                    </div>
+                    
+                    <a href="https://www.instagram.com/reel/DQCeZhuDM-8/?igsh=MW90enduMG5yajhqaw==" target="_blank" class="btn-reel btn-large"><i class="fab fa-instagram"></i> شاهد الريلز والقياسات على انستغرام</a>
+                    
+                    <a href="https://wa.me/9647756000447" target="_blank" class="btn-whatsapp btn-large">اطلب الآن عبر الواتساب <i class="fab fa-whatsapp"></i></a>
+                    <button class="btn-kicard btn-large" onclick="alert('للدفع عبر كي كارد (برنامج Super Qi)، يرجى استخدام الرقم 7147028117 بعد التواصل معنا لتأكيد الطلب.')">الدفع عبر كي كارد (Super Qi) <i class="fas fa-credit-card"></i></button>
+                    <a href="https://www.instagram.com/deemaboutiquee" target="_blank" class="btn-order btn-large">اطلب الآن عبر انستغرام <i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
